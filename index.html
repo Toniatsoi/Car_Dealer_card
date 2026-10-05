@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quijada Auto Sales | Digital Business Card</title>
+<meta name="description" content="Leonard Anthony C. Quijada, Sales Consultant at Quijada Auto Sales, Dauis, Bohol. Call, book a test drive or save my contact.">
+<meta name="theme-color" content="#15181d">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Quijada Auto Sales | Digital Business Card">
+<meta property="og:description" content="New and pre-owned cars. Tap to call, book a test drive or save my contact.">
+<meta property="og:image" content="https://YOUR-SITE.example/preview.jpg">
+<meta property="og:url" content="https://YOUR-SITE.example/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+
+<script>
+/* ==========================================================================
+   YOUR INFORMATION: EDIT ONLY THIS BLOCK
+   ========================================================================== */
+const PROFILE = {
+  name:   "Leonard Anthony C. Quijada",
+  first:  "Leonard Anthony",
+  last:   "Quijada",
+  title:  "Sales Consultant",
+  org:    "Quijada Auto Sales",
+  tagline:"New and pre-owned cars, fair prices, easy financing. Let's find the right ride for you.",
+  location: "Dauis, Bohol, Philippines",
+
+  phoneRaw:     "+639949782217",
+  phoneDisplay: "+63 994 978 2217",
+  email:   "quijadaleonardanthony1@gmail.com",
+  website: "https://toniatsoi.github.io//portfolio/index.html",
+  photo: "photo.png",
+
+  services: ["Brand new cars","Pre-owned cars","SUVs & pickups","Financing","Trade-ins","Test drives"],
+  hours: [
+    ["Mon – Sat", "8:30 AM – 6:30 PM"],
+    ["Sunday",    "By appointment"]
+  ],
+
+  socials: {
+    facebook:  "https://www.facebook.com/leonardanthony.quijada.31",
+    instagram: "", linkedin: "", github: "", tiktok: "", youtube: ""
+  }
+};
+/* ========================================================================== */
+</script>
+
+<style>
+:root{
+  --ink:#15181d; --muted:#5b636e; --paper:#ffffff; --line:#e4e6ea; --soft:#f3f4f6;
+  --steel:#15181d; --steel2:#262b33; --accent:#ffb000; --accent-ink:#2a1d00; --red:#d62f2f;
+  --bg1:#dfe2e6; --bg2:#f4f5f7; --shadow:0 22px 44px -22px rgba(10,12,16,.6);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#eef0f3; --muted:#a3abb6; --paper:#1b1f26; --line:#2d333c; --soft:#232830; --steel:#0f1216; --steel2:#2a3039; --bg1:#0b0d10; --bg2:#12151a; --shadow:0 22px 44px -22px #000; }
+}
+i{display:inline-flex;font-style:normal}
+svg.ic{width:1em;height:1em;display:block;flex:none}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:var(--ink);min-height:100vh;overflow-x:hidden;line-height:1.5;
+  padding:env(safe-area-inset-top) 16px env(safe-area-inset-bottom);
+  display:flex;justify-content:center;background:linear-gradient(170deg,var(--bg1),var(--bg2));
+}
+.card{width:100%;max-width:440px;margin:20px 0 28px;background:var(--paper);border-radius:26px;box-shadow:var(--shadow);overflow:hidden;animation:rise .6s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+h1,h2,.plate,.btn{font-family:"Barlow Condensed","Arial Narrow",system-ui,sans-serif}
+
+/* Hero: dark road with a dashed centre line and a car driving along it */
+.hero{height:150px;position:relative;background:linear-gradient(180deg,var(--steel),var(--steel2));overflow:hidden}
+.hero .brand{position:absolute;left:22px;top:20px;color:#fff;font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:1.35rem;line-height:1.05;letter-spacing:.01em}
+.hero .brand small{display:block;color:var(--accent);font-weight:600;font-size:.95rem}
+.hero .car{position:absolute;right:20px;bottom:34px;font-size:64px;color:#fff;animation:drive 1.2s cubic-bezier(.2,.8,.2,1) both .2s}
+.hero .car svg{stroke-width:1.5}
+@keyframes drive{from{transform:translateX(110px);opacity:0}to{transform:none;opacity:1}}
+.road{position:absolute;left:0;right:0;bottom:0;height:30px;background:#0b0d10}
+.road::before{content:"";position:absolute;left:0;right:0;top:50%;height:4px;margin-top:-2px;
+  background:repeating-linear-gradient(90deg,var(--accent) 0 26px,transparent 26px 50px)}
+
+.profile{text-align:center;padding:0 22px 6px;margin-top:-52px;position:relative;z-index:1}
+.avatar{
+  width:112px;height:112px;border-radius:50%;margin:0 auto 12px;border:5px solid var(--paper);
+  background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:"Barlow Condensed",sans-serif;font-size:2.4rem;font-weight:700;
+  overflow:hidden;box-shadow:0 0 0 3px var(--accent),0 10px 22px -10px rgba(0,0,0,.6);
+}
+.avatar img{width:100%;height:100%;object-fit:cover}
+h1{font-size:2rem;line-height:1.05;letter-spacing:.005em;font-weight:700}
+/* licence-plate style job title */
+.plate{display:inline-block;margin-top:10px;padding:3px 16px;border:2px solid var(--ink);border-radius:8px;background:var(--paper);
+  font-weight:700;font-size:1.15rem;letter-spacing:.08em;text-transform:uppercase;box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 3px var(--line)}
+.bio{color:var(--muted);margin-top:12px}
+
+.section{padding:12px 22px}
+.section h2{font-size:1.25rem;font-weight:700;letter-spacing:.02em;margin-bottom:10px}
+.list{display:grid;gap:10px}
+.row{
+  display:flex;align-items:center;gap:14px;min-height:60px;padding:10px 12px;border-radius:14px;
+  background:var(--soft);border:1px solid var(--line);color:inherit;text-decoration:none;
+  transition:transform .15s ease,border-color .15s ease;
+}
+a.row:hover{transform:translateY(-2px);border-color:var(--accent)}
+.row:active{transform:scale(.98)}
+.ico{flex:none;width:44px;height:44px;border-radius:12px;background:var(--steel);color:var(--accent);display:grid;place-items:center;font-size:1.2rem}
+.txt{flex:1;min-width:0}
+.txt small{display:block;color:var(--muted);font-size:.8rem}
+.txt span{display:block;font-weight:600;overflow-wrap:anywhere}
+.inner{display:flex;align-items:center;gap:14px;flex:1;min-width:0;color:inherit;text-decoration:none}
+.copy{flex:none;width:44px;height:44px;border:0;border-radius:12px;background:transparent;color:var(--muted);font-size:1.1rem;cursor:pointer;display:grid;place-items:center}
+.copy:hover{background:var(--line);color:var(--ink)}
+.copy.done{color:#1b9a5a}
+
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:12px;border-radius:14px;
+  font-weight:700;font-size:1.25rem;letter-spacing:.03em;border:0;cursor:pointer;text-decoration:none;transition:transform .15s ease,filter .15s;
+}
+.btn:hover{filter:brightness(1.07);transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);box-shadow:0 12px 22px -14px var(--accent)}
+.btn.secondary{background:var(--steel);color:#fff;margin-top:10px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--ink);color:var(--ink);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:8px}
+.chip svg{font-size:.85rem;color:var(--red)}
+
+.hours{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:4px 14px}
+.hours div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.hours div:last-child{border-bottom:0}
+.hours dt{font-weight:600}
+.hours dd{color:var(--muted)}
+
+.socials{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.socials a{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;color:#fff;background:var(--steel);text-decoration:none;transition:transform .15s ease,background .15s,color .15s}
+.socials a:hover{transform:translateY(-3px);background:var(--accent);color:var(--accent-ink)}
+.socials a:active{transform:scale(.94)}
+
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:10px 22px 22px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translate(-50%,20px);background:var(--steel);color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:10}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media (max-width:360px){h1{font-size:1.7rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="hero" aria-hidden="true">
+    <div class="brand" id="brand"></div>
+    <i class="car" data-i="car"></i>
+    <div class="road"></div>
+  </div>
+
+  <section class="profile">
+    <div class="avatar" id="avatar" role="img" aria-label="Profile picture"></div>
+    <h1 id="name"></h1>
+    <div class="plate" id="title"></div>
+    <p class="bio" id="bio"></p>
+  </section>
+
+  <section class="section">
+    <a class="btn primary" id="bookBtn"><i data-i="key"></i> Book a test drive</a>
+    <button class="btn secondary" id="saveBtn"><i data-i="contact"></i> Add to Contacts</button>
+  </section>
+
+  <section class="section" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <div class="list">
+      <div class="row">
+        <a id="phoneLink" class="inner"><span class="ico"><i data-i="phone"></i></span><span class="txt"><small>Call</small><span id="phoneText"></span></span></a>
+        <button class="copy" id="copyPhone" aria-label="Copy phone number"><i data-i="copy"></i></button>
+      </div>
+      <div class="row">
+        <a id="emailLink" class="inner"><span class="ico"><i data-i="mail"></i></span><span class="txt"><small>Email</small><span id="emailText"></span></span></a>
+        <button class="copy" id="copyEmail" aria-label="Copy email address"><i data-i="copy"></i></button>
+      </div>
+      <a class="row" id="mapLink" target="_blank" rel="noopener noreferrer"><span class="ico"><i data-i="pin"></i></span><span class="txt"><small>Visit the showroom</small><span id="locText"></span></span></a>
+      <a class="row" id="webLink" target="_blank" rel="noopener noreferrer"><span class="ico"><i data-i="globe"></i></span><span class="txt"><small>Website</small><span id="webText"></span></span></a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="serv-h">
+    <h2 id="serv-h">What we offer</h2>
+    <div class="chips" id="services"></div>
+  </section>
+
+  <section class="section" aria-labelledby="hours-h">
+    <h2 id="hours-h">Showroom hours</h2>
+    <dl class="hours" id="hours"></dl>
+  </section>
+
+  <section class="section" id="social" aria-labelledby="social-h">
+    <h2 id="social-h">Follow us</h2>
+    <div class="socials" id="socials"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  const P = PROFILE, $ = id => document.getElementById(id);
+
+  const IC = {
+    phone:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
+    mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
+    pin:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
+    globe:'<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+    copy:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+    check:'<path d="M20 6 9 17l-5-5"/>',
+    contact:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/>',
+    car:'<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/>',
+    key:'<circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/>',
+    facebook:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+    instagram:'<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/>',
+    linkedin:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
+    github:'<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>',
+    youtube:'<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27z"/>',
+    tiktok:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>'
+  };
+  const ic = n => '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + IC[n] + '</svg>';
+  document.querySelectorAll("[data-i]").forEach(e => e.innerHTML = ic(e.dataset.i));
+
+  const parts = P.org.replace(/\s+(Auto Sales|Motors|Cars|Auto)$/i, "");
+  $("brand").innerHTML = parts + "<small>" + (P.org.slice(parts.length).trim() || "Auto Sales") + "</small>";
+  $("name").textContent = P.name;
+  $("title").textContent = P.title;
+  $("bio").textContent = P.tagline;
+  $("phoneText").textContent = P.phoneDisplay;
+  $("emailText").textContent = P.email;
+  $("locText").textContent = P.location;
+  $("webText").textContent = P.website.replace(/^https?:\/\//,"");
+  $("foot").textContent = "© " + new Date().getFullYear() + " " + P.org;
+
+  function initials(){ return (P.first[0] + P.last[0]).toUpperCase(); }
+  const av = $("avatar");
+  if (P.photo) {
+    const img = new Image(); img.src = P.photo; img.alt = P.name + " profile picture";
+    img.onerror = () => { img.remove(); av.textContent = initials(); };
+    av.appendChild(img);
+  } else av.textContent = initials();
+
+  $("phoneLink").href = "tel:" + P.phoneRaw;
+  $("bookBtn").href = "tel:" + P.phoneRaw;
+  $("emailLink").href = "mailto:" + P.email;
+  $("mapLink").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(P.location);
+  $("webLink").href = P.website;
+
+  P.services.forEach(s => {
+    const c = document.createElement("span"); c.className = "chip";
+    c.innerHTML = ic("check"); c.appendChild(document.createTextNode(s)); $("services").appendChild(c);
+  });
+  P.hours.forEach(h => {
+    const d = document.createElement("div");
+    const dt = document.createElement("dt"); dt.textContent = h[0];
+    const dd = document.createElement("dd"); dd.textContent = h[1];
+    d.append(dt, dd); $("hours").appendChild(d);
+  });
+
+  const icons = {
+    facebook:["facebook","Facebook"], instagram:["instagram","Instagram"],
+    linkedin:["linkedin","LinkedIn"], github:["github","GitHub"],
+    tiktok:["tiktok","TikTok"], youtube:["youtube","YouTube"]
+  };
+  const alwaysShow = ["facebook","instagram","tiktok","youtube"];
+  Object.keys(icons).forEach(k => {
+    const url = P.socials[k];
+    if (!url && !alwaysShow.includes(k)) return;
+    const a = document.createElement("a");
+    a.setAttribute("aria-label", icons[k][1] + " profile");
+    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
+    else { a.href = "#"; a.addEventListener("click", e => { e.preventDefault(); toast(icons[k][1] + " link not added yet"); }); }
+    a.innerHTML = ic(icons[k][0]);
+    $("socials").appendChild(a);
+  });
+
+  let t; function toast(msg){
+    const el = $("toast"); el.textContent = msg; el.classList.add("show");
+    clearTimeout(t); t = setTimeout(() => el.classList.remove("show"), 2200);
+  }
+
+  async function copy(text, btn, label){
+    try { await navigator.clipboard.writeText(text); }
+    catch(e){
+      const ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+    }
+    btn.classList.add("done"); btn.innerHTML = ic("check");
+    toast(label + " copied");
+    setTimeout(() => { btn.classList.remove("done"); btn.innerHTML = ic("copy"); }, 1800);
+  }
+  $("copyPhone").onclick = e => copy(P.phoneRaw, e.currentTarget, "Phone number");
+  $("copyEmail").onclick = e => copy(P.email, e.currentTarget, "Email");
+
+  function buildVCard(){
+    const esc = s => String(s).replace(/([,;\\])/g,"\\$1").replace(/\n/g,"\\n");
+    return [
+      "BEGIN:VCARD","VERSION:3.0",
+      "N:" + esc(P.last) + ";" + esc(P.first) + ";;;",
+      "FN:" + esc(P.name),
+      "ORG:" + esc(P.org),
+      "TITLE:" + esc(P.title),
+      "TEL;TYPE=CELL:" + P.phoneRaw,
+      "EMAIL;TYPE=INTERNET:" + P.email,
+      "URL:" + P.website,
+      "ADR;TYPE=WORK:;;" + esc(P.location) + ";;;;",
+      "END:VCARD"
+    ].join("\r\n");
+  }
+  $("saveBtn").onclick = () => {
+    const blob = new Blob([buildVCard()], {type:"text/vcard;charset=utf-8"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = P.last + "_" + P.first.replace(/\s+/g,"_") + ".vcf";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    toast("Contact file ready. Open it to save.");
+  };
+})();
+</script>
+</body>
+</html>
